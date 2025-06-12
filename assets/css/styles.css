@@ -183,7 +183,7 @@ nav .toggle_btn {
 .dropdown_menu {
   display: none;
   position: absolute;
-  right: 2pem;
+  right: 2rem; 
   top: 60px;
   height: 0;
   width: 100%;
@@ -196,7 +196,11 @@ nav .toggle_btn {
 
 .dropdown_menu.open {
   height: 240px;
-  
+}
+
+.dropdown_menu ul {
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown_menu ul li {
@@ -212,24 +216,27 @@ nav .toggle_btn {
   justify-content: center;
 }
 
-
 @media (max-width: 992px){
   nav .links,
   nav .action_btn {
-    display: none;
-  };
+    display: none !important;
+  }
   nav .toggle_btn{
-    display: block;
-  };
+    display: block !important;
+  }
   .dropdown_menu{
     display: block;
-  };
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: calc(100% - 4rem);
+  }
 }
-
 
 @media (max-width: 576px){
   .dropdown_menu{
-    left: 2rem;
+    left: 1rem;
+    right: 1rem;
     width: unset;
   }
 }
