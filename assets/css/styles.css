@@ -227,17 +227,18 @@ nav .toggle_btn {
   transform: translateX(5px);
 }
 
-/* === Sub-menu inside dropdown === */
-.dropdown_menu .sub-menu {
-  display: none;
+/* === Мобильные подменю внутри dropdown_menu === */
+.dropdown_menu .mobile-sub-menu {
+  display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.6);
-  margin-top: 0.3rem;
+  margin: 0.4rem 0 0.8rem 0;
   border-left: 2px solid rgba(218, 37, 13, 0.5);
   border-radius: 10px;
+  padding: 0.3rem 0;
 }
 
-.dropdown_menu .sub-menu li a {
+.dropdown_menu .mobile-sub-menu li a {
   color: #ccc;
   font-size: 0.9rem;
   padding: 0.7rem 2rem;
@@ -246,15 +247,10 @@ nav .toggle_btn {
   transition: all 0.3s ease;
 }
 
-.dropdown_menu .sub-menu li a:hover {
+.dropdown_menu .mobile-sub-menu li a:hover {
   color: #DA250D;
   background: rgba(255, 255, 255, 0.1);
   transform: translateX(5px);
-}
-
-/* Toggle open submenu on click (mobile-friendly) */
-.dropdown_menu > li.open > .sub-menu {
-  display: flex;
 }
 
 /* Contact button style inside dropdown */
