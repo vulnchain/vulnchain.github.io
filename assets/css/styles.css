@@ -112,9 +112,16 @@ nav .links {
 }
 
 
-nav ul li ul {
+
+nav .links li ul {
   display: none;
 }
+
+
+.dropdown_menu .mobile-sub-menu {
+  display: flex !important;
+}
+
 
 
 nav .links li:hover ul {
@@ -302,6 +309,50 @@ nav .toggle_btn {
 .pricing li p {
   color: #696969;
 }
+
+.services-grid, .industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 1rem;
+}
+
+.service-card, .industries-grid div {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: thin solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover, .industries-grid div:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.services-section h2,
+.why-section h2,
+.industries-section h2,
+.pricing-preview h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #DA250D;
+}
+
+.why-section ul {
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.pricing-preview {
+  border-top: thin solid rgba(255, 255, 255, 0.2);
+  border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  padding: 3rem 1rem;
+}
+
 
 .header-section {
   margin-bottom: auto;
