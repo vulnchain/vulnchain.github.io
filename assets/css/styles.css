@@ -180,6 +180,17 @@ nav .toggle_btn {
   cursor: crosshair;
 }
 
+.pricing-preview .action_btn {
+  margin-top: 1rem;
+  color: #DA250D;
+  font-weight: 600;
+  border: 1px solid #DA250D;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+  transition: all 0.3s ease;
+}
 
 /* === Enhanced Mobile Dropdown Menu === */
 .dropdown_menu {
@@ -347,7 +358,7 @@ nav .toggle_btn {
 .pricing-preview {
   border-top: thin solid rgba(255, 255, 255, 0.2);
   border-bottom: thin solid rgba(255, 255, 255, 0.2);
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 
@@ -379,6 +390,12 @@ nav .toggle_btn {
 section {
   padding: 10px;
   max-width: 100%; /* Adjusted the max-width */
+}
+
+section h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #DA250D;
 }
 
 img {
